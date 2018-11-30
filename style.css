@@ -3,10 +3,16 @@
     background: red;
     padding: 1em;
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    /* grid-template-columns: min-content max-content; */
+    grid-template-columns: fit-content(800px) max-content;
+
     grid-gap: 1em;
 }
 
 .item {
     background: yellow;
+}
+
+.item img {
+    width: 200px;
 }
