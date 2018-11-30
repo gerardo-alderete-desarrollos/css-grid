@@ -8,15 +8,22 @@ body {
 
 }
 
+/*
+    grid-row: grid-row-start / grid-row-end
+    grid-column: grid-colum-start / grid-colum-end
+*/
+
 aside {
     background: hsl(200, 100%, 60%);
 }
 
 footer {
     background: hsl(266, 100%, 60%);
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-row-start: 3; */
+    grid-row: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 2; /* span indica el numero de columnas que ocupa*/
 }
 
 main {
@@ -26,8 +33,9 @@ main {
 
 header {
     background: hsl(22, 98%, 47%);
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
+    /* grid-row-start: 1; */
+    grid-row: 1;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / 3;
 }
