@@ -5,30 +5,44 @@
     margin: 2em auto;
     border: 2px solid #000;
     grid-gap: 10px;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: auto / 100px 100px 100px;
     font-size: 2.5em;
-    /* justify-items: end; */
+
+    /* justify-content: end; */
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: stretch; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
+
+
+
+
+
+
+
+
+
+
 }
-/* Alinear items en x 
-    justigy-items (container)
-    justify-self (items)
+
+/*Alinear tracks en x (inline)
+    justify-content( container)
 */
-/* Alinear items en y
-    align-items (container)
-    align-self (items)
+
+/*Alinear tracks en y (block)
+    align-content (container)
 */
 
 .item {
     background: yellow;
     width: 80px;
-}
-
-.item:nth-child(2){
-    /* justify-self: center; */
-    margin: 0 auto;
-}
-
-.item:nth-child(3){
-    /* justify-self: end; */
-    margin-left: auto;
 }
